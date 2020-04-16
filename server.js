@@ -12,4 +12,24 @@ app.get('/json_test', function (req, res) {
   });
 });
 
+app.get('/json_graph', function (req, res) {
+  res.json({
+    color: "green",
+    data: [
+      {
+        name: "Jean-Luc Picard",
+        value: 1450
+      },
+      {
+        name: "James T. Kirk",
+        value: 350
+      },
+      {
+        name: "Kathryn Janeway",
+        value: 1850
+      }
+    ]
+  });
+});
+
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
