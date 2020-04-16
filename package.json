@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "art-rest-client": "^1.7.0",
     "express": "^4.17.1"
   },
   "scripts": {
