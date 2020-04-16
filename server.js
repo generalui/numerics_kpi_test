@@ -6,9 +6,9 @@ app.get('/hello', (req, res) => res.send('Hello World!'))
 
 app.get('/json_test', function (req, res) {
   res.json({
-    postfix: "Build Status",
-    color: "green",
-    data: { value: "Passed" }
+    postfix: "Cool Seconds",
+    color: "blue",
+    data: { value: `${(new Date).getSeconds()}` }
   });
 });
 
